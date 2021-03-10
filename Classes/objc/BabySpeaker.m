@@ -100,6 +100,11 @@ typedef NS_ENUM(NSUInteger, BabySpeakerType) {
     [notifyList removeObjectForKey:c.UUID.description];
 }
 
+//删除全部notify list
+- (void)removeAllNotify {
+    [notifyList removeAllObjects];
+}
+
 //获取notify list
 - (NSMutableDictionary *)notifyCallBackList {
     return notifyList;

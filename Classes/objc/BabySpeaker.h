@@ -33,6 +33,9 @@
 //添加到notify list
 - (void)removeNotifyCallback:(CBCharacteristic *)c;
 
+//删除全部notify list
+- (void)removeAllNotify;
+
 //获取notify list
 - (NSMutableDictionary *)notifyCallBackList;
 

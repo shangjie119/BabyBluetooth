@@ -475,6 +475,11 @@ characteristic:(CBCharacteristic *)characteristic
      characteristic:(CBCharacteristic *)characteristic;
 
 /**
+ 取消设备所有的notify
+ */
+- (void)cancelAllNotify;
+
+/**
 获取当前连接的peripherals
  */
 - (NSArray *)findConnectedPeripherals;

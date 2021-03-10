@@ -580,6 +580,11 @@ characteristic:(CBCharacteristic *)characteristic
     [babySpeaker removeNotifyCallback:characteristic];
 }
 
+- (void)cancelAllNotify
+{
+    [babySpeaker removeAllNotify];
+}
+
 //获取当前连接的peripherals
 - (NSArray *)findConnectedPeripherals {
      return [babyCentralManager findConnectedPeripherals];
